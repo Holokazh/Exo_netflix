@@ -1,0 +1,136 @@
+/***** GLOBALS SETTINGS *****/
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    /* height: 100vh; */
+}
+
+main {
+    height: 73vh;
+}
+
+body::after {
+    content: "";
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/838a77eb-572a-4eb5-8e3a-364069b24d29/74108bce-ed59-4596-a5f6-a182f24fe062/FR-fr-20200907-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+body img {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+/*** NAVIGATION ***/
+#sNav {
+    width: 100%;
+    height: 7rem;
+}
+
+#sNav a {
+    width: 10%;
+    height: 100%;
+    align-items: center;
+    margin-left: 2%
+}
+
+#sNav a img {
+    width: 100%;
+    height: 50%;
+}
+
+/***** MAIN *****/
+#sPrincipale {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    color: #fff;
+}
+
+#sPrincipale #divLogin {
+    width: 25%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#sPrincipale #divLogin form {
+    width: 70%;
+    flex-direction: column;
+}
+
+#sPrincipale #divLogin form h2 {
+    font-size: 2em;
+    margin-top: 20%;
+}
+
+#sPrincipale #divLogin form #username, #sPrincipale #divLogin form #password {
+    height: 3rem;
+    width: 90%;
+    background-color: #323232;
+    border: 1px solid #323232;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding-left: 5%;
+}
+
+#sPrincipale #divLogin form #username {
+    margin-bottom: 5%;
+}
+
+#sPrincipale #divLogin form #password {
+    margin-bottom: 15%;
+}
+
+#sPrincipale #divLogin form #submit {
+    height: 3rem;
+    background-color: #E50914;
+    border: 1px solid #E50914;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#sPrincipale #divLogin p {
+    text-decoration: none;
+    color: #626262;
+}
+
+#sPrincipale #divLogin a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#sPrincipale #divLogin a:hover {
+    text-decoration: underline;
+}
+
+/***** FOOTER *****/
+#sFooter {
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#sFooter p {
+    color: #626262;
+    margin: 2% 0 0 20%;
+}
